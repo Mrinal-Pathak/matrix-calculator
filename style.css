@@ -1,0 +1,218 @@
+                      /* index page css */
+/* -------------------------------------------------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(90deg,rgb(5, 5, 5),rgb(39, 218, 231),rgb(8, 8, 8));
+}
+h1{
+    text-align: center;
+    background-image: linear-gradient(90deg,black,rgb(200, 0, 255),black);
+    font-size: 3rem;
+    text-shadow: 1px 1px 10px white;
+    box-shadow: inset 2px 2px 10px white,inset -2px -2px 10px white;
+    padding: 1rem;
+}
+#navbar{
+    display: flex;
+    list-style: none;
+    /* padding: 1rem; */
+    background-color: rgb(86, 180, 217);
+    background-image: linear-gradient(90deg,black,rgb(225, 14, 14),black);
+    height: 2.5rem;
+    font-size: 1.5rem;
+    color: white;
+    z-index: 6;
+}
+
+.navoption{
+    padding:.3rem .7rem;
+    border: 1px solid white;
+    height: 1.7rem;
+    background-color: transparent;
+
+}
+.navoption:hover{
+    background-color: white;
+    color: black;
+}
+#dropmenu{
+    display: none;
+    list-style: none;
+    background-color:black;
+    color: black;
+    border: 1px solid white;
+    position: relative;
+}
+.dropoption{
+    border: 1px solid white;
+    text-align: center;
+}
+.dropoption:hover{
+    background-color: blueviolet;
+}
+#drop:hover #dropmenu{
+    display: block; 
+}
+#drop:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: white;
+}
+.dropoption{
+    z-index: 4;
+}
+#optionbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 5rem;
+}
+.option{
+    border: 2px solid white;
+    width: 15rem;
+    text-align: center;
+    margin: .3rem;
+    background-color: black;
+}
+.option:hover{
+    box-shadow: 2px 2px 20px white;
+    transform:scale(1.1) ;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+                             /* css for footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: black;
+}
+
+.message {
+    color: white;
+
+}
+
+#iconcontainer {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+
+    margin: 1rem;
+}
+
+.icons {
+    /* border: 2px solid red; */
+    float: left;
+    padding: 0;
+    margin: 1rem;
+}
+
+svg:hover {
+    filter: drop-shadow(1px 1px 10px rgb(240, 237, 237));
+}
+
+svg {
+    height: 50px;
+    width: auto;
+
+}
+
+#contact {
+    font-size: 2rem;
+    color: white;
+}
+/* ---------------------------------------------------------------------------- */
+
+                           /* rest css */
+/* -------------------------------------------------------------------------------- */
+#mainbox {
+    /* border: 2px solid red; */
+    display: none;
+    padding: .1rem;
+
+    
+}
+#ansbtn,#ans{
+    display: none;
+}
+
+.container {
+    margin: 1rem;
+    padding: .4rem;
+    display: grid;
+    gap: .4rem;
+    border-radius: 5px;
+    border: .5px solid black;
+    box-shadow: inset 2px 2px 10px black,2px 2px 10px black;
+}
+
+.box{
+    height: 80px;
+    width: 80px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(225, 245, 10);
+    box-shadow: inset 2px 2px 10px black,2px 2px 10px black;
+
+}
+
+.mainbody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 0;
+    /* font-size: 1.8rem; */
+}
+h2{
+    text-align: center;
+    color: white;
+}
+.matsize{
+    /* border: 2px solid rgb(0, 0, 0); */
+    margin: .5rem;
+    width: 210px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+input{
+    background-color: rgb(225, 245, 10);
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: inset 2px 2px 10px black,2px 2px 10px black;
+    border-radius: 10px;
+}
+.btn{
+    width: 100px;
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.btn:hover{
+    box-shadow: 2px 2px 20px white;
+    transform:scale(1.1) ;
+}
+p{
+    color: white;
+    padding: .4rem;
+    text-align: justify;
+}
